@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>AnimeStream - Nonton anime gratis bebas iklan</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
     </head>
     <body>
         <div class="loading"><h1>Website Sedang Dimuat</h1><h3>Mohon Bersabar!</h3></div>
         <div class="wm">
-            <img src="./assets/logo.png" alt="gambar">
+            <img src="../assets/logo.png" alt="gambar">
         </div>
         <div class="notif-area">
             <div class="notif">Hasil Tidak Ditemukan!!</div>
@@ -20,48 +20,30 @@
             <nav>
                 <h1>AnimeStream</h1>
                 <span>
-                    <a href="#All" class="btn-nav">Beranda</a>
-                    <a href="#Ongoing" class="btn-nav">Ongoing</a>
+                    <a href="../index.html" class="btn-aktif" style="padding: 5px 7px;">X</a>
                 </span>
             </nav>
             <nav>
-                <div class="search-box">
-                    <input type="text" id="search-box" required>
-                    <div class="search-submit">
-                        <div class="garis-v"></div>
-                        <button type="submit" id="search">Search</button>
-                    </div>
-                </div>
+                <h4 id="judulAnime"></h4>
             </nav>
         </header><br>
         
         <main>
-            <section id="All">
-                <div>
-                    <h2>All Anime</h2>
-                    <ul id="anime-list">
-                    </ul>
-                    <ul id="search-results">
-                    </ul>
+            <div class="border-desk">
+                <div class="borderBanner">
+                    <div class="cover-anime">
+                        <img alt="Banner Anime" id="bannerAnime">
+                        <div class="jenis-anime"></div>
+                    </div>
+                    <h5 id="judulAnime"></h5><hr>
+                    <span><p>Eps: <span id="epsCount"></span></p></span>
+                    <span><p>Genre: <span id="genreAnime"></span></p></span>
                 </div>
-                
-            </section>
-            <section id="Ongoing">
-                <h2>Ongoing Anime</h2>
-                <ul id="anime-list">
-                    <!-- <li class="anime-list">
-                        <a href="#" id="anime-link">
-                            <div class="anime-card">
-                                <div class="cover-anime">
-                                    <div class="jenis-anime">Tv</div>
-                                    <img  alt="cover-anime">
-                                </div>
-                                <h5 class="judul-anime2">Tenki no ko</h5>
-                            </div>
-                        </a>
-                    </li> -->
-                </ul>
-            </section>
+                <div class="desk">
+                    <h4 id="judulAnime"></h4>
+                    <p id="deskAnime"></p>
+                </div>
+            </div>
         </main>
         <footer>
             <h5>AnimeStream</h5>
