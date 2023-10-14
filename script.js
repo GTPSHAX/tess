@@ -236,7 +236,7 @@ animeCardElements.forEach(function(animeCard, index) {
     var imgElement = animeCard.querySelector("img");
     
     var h5Element = animeCard.querySelector(".judul-anime");
-    var judulAnime = h5Element.textContent.toLowerCase().replace(/\s/g, '-');
+    var judulAnime = h5Element.textContent.replace(/\s/g, '-');
     var urlGambar = "./assets/" + judulAnime + ".jpg";
     imgElement.src = urlGambar;
 
